@@ -1,0 +1,34 @@
+FRONT END
+1. HTML
+2. CSS
+3. Bootstrap
+4. SCSS
+5. JavaScript
+6. Webpack
+7. pacakage manager: npm
+8. React js -> 1. Router 2. Hooks
+9. Chart.js 
+10. Firebase
+
+Optional:
+11. Next.js
+12. MateralUI
+
+UI/UX
+1. Figma
+
+BACKEND 
+1. Python
+2. Flask + REST API
+3. Database - SQL, MongoDB
+4. AWS
+
+AI:
+1. Pandas
+2. Numpy
+3. Plotify
+4. Matplotlib
+
+Extras:
+1. Git 
+2. Github
