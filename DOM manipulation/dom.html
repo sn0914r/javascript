@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulation</title>
+</head>
+<body>
+
+    <!-- DOM Selectors -->
+    <div class="classSelector"></div>
+    <div id="idSelector"></div>
+    <p class="tagSelector"></p>
+    <div class="querySelector"></div>
+    <div class="querySelectorAll"></div>
+     <script>
+        
+        const classSelector = document.getElementsByClassName("classSelector")[0] 
+        classSelector.textContent = "class selector";
+
+        const idSelector = document.getElementById("idSelector")
+        idSelector.textContent = "id selector"
+        
+        const tagSelector = document.getElementsByTagName("p")[0];
+        tagSelector.textContent = "tag selector"
+        
+        const querySelector = document.querySelector(".querySelector")
+        querySelector.textContent = "query selector"
+        
+        const querySelectorAll = document.querySelectorAll(".querySelectorAll")[0]
+        querySelectorAll.textContent = "query selector all"
+
+     </script>
+     
+
+    <!-- DOM Navigation -->
+    <div class="parent" style="width: 200px; aspect-ratio: 1;" >
+        <div class="first-child" style="width: 50px; aspect-ratio: 1;"></div>
+        <div class="middle-child-1" style="width: 50px; aspect-ratio: 1;"></div>
+        <div class="middle-child-2" style="width: 50px; aspect-ratio: 1;"></div>
+        <div class="last-child" style="width: 50px; aspect-ratio: 1;"></div>
+    </div>
+    <script>
+        
+        const m1 = document.querySelector(".middle-child-1") // selected the 2nd element
+        m1.style.backgroundColor="green"
+
+        const parent = m1.parentElement // selected the 2nd element's parent element
+        parent.style.backgroundColor="red";
+
+        const firstChild = parent.firstElementChild // selected the parent's first child
+        firstChild.style.backgroundColor="blue"
+
+        const lastChild = parent.lastElementChild // selected the parent's last child
+        lastChild.style.backgroundColor="black"
+
+        const children = parent.children; // selected 3rd child from the list of children of parent
+        children[2].style.backgroundColor="pink"
+
+        const nextElementOfChild3 =  children[2].nextElementSibling; // selected the next sibling i.e 4th elemnt from element 3
+        nextElementOfChild3.textContent = "4th Element"
+        nextElementOfChild3.style.color = "#fff"
+
+        const previousElementOfChild3 =  children[2].previousElementSibling; // selected the previous sibling i.e 2th elemnt from element 3
+        previousElementOfChild3.textContent = "2th Element"
+        previousElementOfChild3.style.color = "#fff"
+
+    </script>
+
+    <!--DOM class manipulation using classList -->
+    <div class="classManipulation">
+        <style>
+            .box{
+                margin-top: 10px;
+                width: 200px;
+                aspect-ratio: 1;
+                border: 2px solid black;
+                padding: 5px;
+            }
+            .box.dark{
+                background-color: gray;
+            }
+        </style>
+
+        <div class="box">
+            <button onclick="toggleColor(this)"> toggle </button>
+        </div>
+
+        <script>
+            function toggleColor(box){
+                box.parentElement.classList.toggle("dark");
+            }
+        </script>
+
+    </div>
+
+    <!--DOM Creation, remove and appending elemnts-->
+    <div class="dom-cra" style="width: 500px; border: 1px solid black; margin-top: 5px; padding:5px;" ></div>
+    <script>
+        const cra = document.querySelector(".dom-cra");
+        
+        let div = document.createElement("div"); // creates a div element
+        div.textContent = "Hello!";
+        cra.appendChild(div); // adds the div as the last child in the cra element
+
+        let p = document.createElement("p");
+        p.textContent = "Hello-world-p-element";
+        cra.append(p, "text content") // adds 'p' element and 'text content' as last children in the cra element
+
+        let h1 = document.createElement("h1")
+        h1.textContent = "added Headiing"
+        cra.insertBefore(h1, p) // adds "h1" element before 'p' element inside the cra app
+
+        // p.remove() // removes the "p" elemnt from the dom 
+
+    </script>
+
+</body>
+</html>
