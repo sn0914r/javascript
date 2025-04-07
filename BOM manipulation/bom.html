@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM Manipulation</title>
+</head>
+<body>
+
+    <!-- Window Object -->
+    <div class="window-object">
+        <!-- alert -->
+        <button onclick="window.alert(`this is an alert msg`)"> alert </button>
+
+        <!-- confirm -->
+        <button onClick="confirm()">confirm</button>
+        <script>
+            const confirm=()=>{
+                let res = window.confirm("are you a human??");
+                console.log(res) // logs true if OK else false
+            }
+        </script>
+
+        <!--prompt-->
+        <button onclick="askInput()">ask input</button>
+        <script>
+            const askInput=()=>{
+                const userInput = window.prompt("Enter your name")
+                console.log(
+                    userInput
+                    ?userInput
+                    :"u didn't type anything"
+                )
+            }
+        </script>
+        
+        <!--print-->
+        <button onclick="printPage()">print</button>
+        <script>
+            const printPage=()=>window.print()
+        </script>
+        
+    </div>
+
+    <!-- location -->
+    <div class="location-object"></div>
+    
+</body>
+</html>
