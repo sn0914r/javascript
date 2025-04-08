@@ -42,8 +42,43 @@
         
     </div>
 
+    <hr>
+
     <!-- location -->
-    <div class="location-object"></div>
+    <div class="location-object">
+        <button onclick="console.log(`current url: ${window.location.href}`)" >log current url</button>
+        <button onclick="navigate()" >Navigate of some external page</button>
+        <button onclick="console.log(`current protocol of url: ${window.location.protocol}`)" >log protocol</button>
+        <button onclick="console.log(`current port name: ${window.location.hostname}`)" >log hostname</button>
+        <button onclick="console.log(`port number: ${window.location.port}`)" >log port number</button>
+        <button onclick="console.log(`pathname: ${window.location.pathname}`)" >log pathname</button>
+        <button onclick="console.log(`searchquery: ${window.location.search}`)" >log query</button>
+        <script>
+            const navigate=()=>{
+                window.location.href="https://www.5movierulz.prof/search_movies?s=Master"
+            }
+        </script>
+    </div>
+
+    <hr>
+
+    <!-- URLSearchParams (Query String Helper) -->
+     <div class="url-search-params">
+        <button onclick="printParams()"> log the current URL String</button>
+        <div style="border: 1px solid black; padding: 16px" >
+            <input type="text" placeholder="key...">
+            <input type="text" placeholder="value..."/>
+            <button onclick="appendParams(this)" >append key</button>
+        </div>
+        <script>
+            const useParams = new URLSearchParams(location.search);
+            
+            const printParams=()=> console.log(`current query string: ${useParams.toString()}`);
+            
+            const appendParams=(dom)=>useParams.append(dom.previousElementSibling.previousElementSibling.value, dom.previousElementSibling.value)
+
+        </script>    
+     </div>
     
 </body>
 </html>
