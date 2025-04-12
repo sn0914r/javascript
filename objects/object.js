@@ -78,3 +78,19 @@ const entries=[
 ]
 const eObj = Object.fromEntries(entries);
 console.log("entries to objj: ", eObj)
+
+
+//this keyword
+const objectThis = {
+    name: "Siva",
+    greet: function(){
+        console.log("Hello "+this.name);
+        return;
+    },
+    arrowfn: ()=>{
+        console.log("Hello "+this.name);  
+    }
+}
+
+objectThis.greet()
+objectThis.arrowfn();

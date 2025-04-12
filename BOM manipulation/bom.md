@@ -1,4 +1,4 @@
-# BOM - Brower Object Model
+# BOM - Brower Object Model (window object)
 BOM is all about interacting with the browser itself, not just the page (like DOM). It includes:
 1. `window`
 2. `navigator`
@@ -40,3 +40,8 @@ The methods provieed by URLSearchParams are:
 5. `delete(key)`: removes all instances of the specified parameter from the query string.
 6. `has(key)`: checks if the query string contains a specific parameter and returns a boolean.
 7. `toString()`: returns the entire query string (without the ?);
+
+### Screen
+This props are used to access the info related to user device's screen like screen width & height.
+1. `screen.width`: returns the screen width in `px`.
+2. `screen.height`: returns the screen width in `px`.

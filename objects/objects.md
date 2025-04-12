@@ -2,7 +2,7 @@
 
 The `object` is a `collection of key-value pairs` (called as properties and methods)
 
-### Ways to create an object in the following ways:
+### 1. Ways to create an object in the following ways:
 1. Using the `Object literal`:
 ```JS
 const obj = { key: "value" };
@@ -23,7 +23,7 @@ function Person(name){
 const object = new Person("siva"); //{ name: siva }
 ```
 
-### Accessing and Modifying the properties in object
+### 2. Accessing and Modifying the properties in object
 1. using the `dot operator`.
 ```JS
 const value = object.key //accessing
@@ -35,7 +35,7 @@ const value = object["key"] //accessing
 object["key"] = "value" // updating or creating a property
 ```
 
-### Object Methods
+### 3. Object Methods
 1. `Object.keys(object)`: It returns an `array of keys` in the `object`.
 2. `Object.values(object)`: It returns an `array of values` in the `object`.
 3. `Object.entries(object)`:It returns an `array of arrays [key, value]` pairs.
@@ -99,3 +99,8 @@ Copied Object: { name: "Reddy", skills:["Bootstrap", "Css", "JS"] }
 1. `Object.defineProperty(object, key", helperObject)`
 2. `Object.getOwnPropertyDescriptors(object)`
 3. `Object.is(value1, value2)`
+
+### 4. `this` keyword in objects
+1. this refers to the current object (the one calling the method).
+2. Arrow functions do not have their own this — they inherit it from the outer scope.
+3. Use regular functions in object methods if you need this to refer to the object.
