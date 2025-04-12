@@ -45,3 +45,32 @@ The methods provieed by URLSearchParams are:
 This props are used to access the info related to user device's screen like screen width & height.
 1. `screen.width`: returns the screen width in `px`.
 2. `screen.height`: returns the screen width in `px`.
+
+### web storages
+Web Storage is a browser feature to store data locally on the user’s broswer using JavaScript, without using cookies.
+
+It is classified into two types:
+    1. `local storage`
+    2. `session storage`
+
+#### `local storage`: 
+1. It `stores` data `permanently` (until manually deleted).
+2. the stored data can be `accessed from all tabs`/windows.
+3. used in user preferences, themes, tokens and saved items.
+4. it stores data in `key-value pairs` and both `key and value are stored as strings`.
+5. if we have non-primitives like objects and arrays then we must stringify them using the `JSON.stringify(value)` method and when retrived we can convert themm back into arrays or objects usng `JSON.parse(value)`.
+6. Max Size limit: `5mb or 10mb`.
+    
+#### `session storage`:
+1. It stores data `temporarely`, deletes when user closes the browser.
+2. the data can be `accessed only from the same tab`.
+3. size limit: `5mb`.
+
+#### properties for webstorages
+1. `localstorage.setItem(key, value)`: stores the key-value.
+2. `localstorage.getItem(key)`: gets the corresponding key's value.
+3. `localstorage.removeItem(key)`: removes a specific key-value pair from the storage.
+4. `localstorage.clear()`: removes all data in the storage.
+5. `localstorage.length`: returns the total number of records stored in the storage.
+
+###### Note: the properties are same for session storage also

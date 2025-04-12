@@ -7,6 +7,7 @@
 </head>
 <body>
 
+    <h1>window Props</h1>
     <!-- Window Object -->
     <div class="window-object">
         <!-- alert -->
@@ -45,6 +46,7 @@
     <hr>
 
     <!-- location -->
+    <h2>Location Object</h2>
     <div class="location-object">
         <button onclick="console.log(`current url: ${window.location.href}`)" >log current url</button>
         <button onclick="navigate()" >Navigate of some external page</button>
@@ -62,6 +64,7 @@
 
     <hr>
 
+    <h2> URLSearchParams</h2>
     <!-- URLSearchParams (Query String Helper) -->
      <div class="url-search-params">
         <button onclick="printParams()"> log the current URL String</button>
@@ -86,6 +89,33 @@
             `device height: ${window.screen.height} device width: ${window.screen.width}`
         )
      </script>
+     <h2>Web storages</h2>
+     <!--Web storages-->
+     <div class="webstorages">
+        <h2>Add data</h2>
+        <form onsubmit="addData(this)">
+            <input type="text" placeholder="enter a key">
+            <input type="text" placeholder="enter a value">
+            <input type="submit">
+        </form>
+        
+        <h2>Delete a key</h2>
+        <form onsubmit="removeKey(this)">
+            <input type="text" placeholder="enter a key">
+            <input type="submit">
+        </form>
+
+        <h2>Remove</h2>
+        <button onclick="removeAlldata()" >Remove all data</button>
+
+        <script>
+            const addData=(form)=>window.localStorage.setItem(form.children[0].value,form.children[1].value);
+            
+            const removeKey=form=>window.localStorage.removeItem(form.firstElementChild.value);
+            
+            const removeAlldata=()=>window.localStorage.clear();
+        </script>
+     </div>
     
 </body>
 </html>
