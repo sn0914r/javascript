@@ -4,8 +4,8 @@ Roadmap
 3. DOM Manipulation
 4. BOM Manipulation
 5. Event Handling
-
 6. ES6
+
 7. Callbacks & Closures
 7. Asynchronous JS, Promises, `async` & `await`. 
 8. API handling
