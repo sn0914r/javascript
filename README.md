@@ -5,9 +5,9 @@ Roadmap
 4. BOM Manipulation
 5. Event Handling
 6. ES6
-
 7. Callbacks & Closures
-7. Asynchronous JS, Promises, `async` & `await`. 
-8. API handling
-9. `this` key word
-10. Patterns
+
+8. Asynchronous JS, Promises, `async` & `await`. 
+9. API handling
+10. `this` key word
+11. Patterns
