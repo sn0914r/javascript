@@ -85,6 +85,5 @@ console.log(newNums); // [1, 22, 3, 4, 5]
 #### Note: we can't update an elemnt at specific index in sets like an array.
 
 ### Other ES6 Features
-1. `promises`
-2. `Modules (import/export)`
-3. `classes`
+1. `Modules (import/export)`
+2. `classes`
