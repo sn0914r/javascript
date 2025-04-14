@@ -74,3 +74,10 @@ promise.then((result) => {
 ```  
 ### pending
 #### Running multiple promises at a single time with `Promise.all()` & `Promise.allSettled()`
+
+#### `async & await` vs `.then() chaining`
+1. `asnyc & await` provides a cleaner way better than `.then()` to handle promises.
+2. The `async` keyword before the function makes the function `asynchronous`. (note: the async functions always return a promise)
+3. The `await` keyword is placed before the promise, it waits for the promise to resolve or reject. 
+4. we can only use `await` keyword inside the `async` function 
+5. `async & await`doesn't handle errors automatically like `.catch()` in `.then() chaining`. So we use `try/catch` inside the async functin to handle errors.
