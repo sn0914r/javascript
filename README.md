@@ -7,4 +7,4 @@ Roadmap
 6. Callbacks & Closures
 7. Asynchronous JS, Promises & `async/await` 
 8. JSON & API Handling
-9. Patterns
+9. React JS [ hooks, optimization, routing]
