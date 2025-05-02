@@ -1,0 +1,15 @@
+{
+  "name": "c_webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "webpack-cli": "^6.0.1"
+  },
+  "scripts":{
+    "build": "webpack"
+  }
+}
