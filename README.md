@@ -7,10 +7,11 @@
 6. BOM Manipulation
 7. ES6 features
 8. Error handling
-9. Asynchrous Programming and API Handling
-10. High-Order functions, `bind()`, `call()`, and `apply`
-11. Debouncing and Throttling
-12. Object-Oriented Programming (OOPs)
+9. Asynchrous Programming and Promises
+10. API Handling
+11. High-Order functions, `bind()`, `call()`, and `apply`
+12. Debouncing and Throttling
+13. Object-Oriented Programming (OOPs)
 
 ## React JS
 1. Important Hooks
@@ -18,11 +19,10 @@
 3. Optimization
 4. Testing
 
-## Webpack
-1. Introduction to Webpack and Setup
-2. Webpack Configuration
-3. Loaders
-4. Plugins
-5. Mode(dev/prod)
-6. Dev server
-7. Webpack in SPA and MPA
+## Firebase
+1. firebase App & setUp
+2. firestore
+3. realtime database & onDisconnect()
+4. firebase authentication (to handle login/signup)
+5. security rules (to lock DB)
+6. Deployment
