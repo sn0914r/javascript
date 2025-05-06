@@ -17,7 +17,6 @@
 1. Important Hooks
 2. Routing (`react-router-dom`)
 3. Optimization
-4. Testing
 
 ## Firebase
 1. firebase App & setUp
